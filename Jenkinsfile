@@ -6,6 +6,10 @@ pipeline {
                 sh 'echo "Build Completed"'
             }
         }
-       
+         stage ('unit test') {
+            steps {
+                sh 'echo "Unit testing"'
+            }
+        }
     }
 }
